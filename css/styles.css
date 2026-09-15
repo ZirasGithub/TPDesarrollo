@@ -11,7 +11,7 @@
 /*===============*/
 
 html {
-    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +72,13 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1300px;
     
+}
+.hero__text{
+    display: flex;
+    background-color: white;
+    max-width: 1300px;
 }
 .hero__img{
     width: 600px;
