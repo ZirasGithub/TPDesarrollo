@@ -9,8 +9,9 @@
 }
 
 /*===============*/
+
 html {
-    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -59,6 +60,12 @@ main {
     align-items: center;
     justify-content: center;
 }
+.hero__introduccion {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hero__container{
     background-color: purple;
     display: flex;
@@ -66,7 +73,15 @@ main {
     align-items: center;
     flex-direction: column;
     
-
+}
+.hero__img{
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 .hero__step{
 background-color: chartreuse;
@@ -77,4 +92,16 @@ background-color: chartreuse;
     justify-content: center;
     align-items: center;
     gap: 15rem;
+}
+.footer__list{
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__autores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
