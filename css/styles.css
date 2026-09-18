@@ -3,10 +3,10 @@
 :root {
 --color-pasoapaso:#ecc27d;
 --color-oscuro:#4A3123;
---color-claro:#FBF3E6;      /* tarjetas de receta y texto sobre fondo oscuro */
---color-destacado:#C97B4A;  /* seccion de presentacion (hero) */
---color-titulo:#8D5151;     /* titulos de las recetas */
---color-texto:#3A2A1E;      /* texto general */
+--color-claro:#FBF3E6;
+--color-destacado:#C97B4A;
+--color-titulo:#8D5151;
+--color-texto:#3A2A1E;
 }
 
 * {
@@ -20,11 +20,10 @@
 /*===============*/
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
-    color: var(--color-texto);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../img/49a3458e3f4aebde51984fa604d74101.webp);
 }
@@ -60,11 +59,12 @@ footer {
     height: 100%;
     max-width: 1300px;
     margin-top: 100px;
-    padding: 70px 0;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 60px;
 }
 #hero__recetas{
     width: 100%;
@@ -75,6 +75,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 150px;
 }
 #hero__recomendaciones{
     width: 100%;
@@ -85,9 +86,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 150px;   
 }
 .hero__introduccion {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,12 +99,14 @@ footer {
 }
 
 .hero__introduccion h1 {
-    font-size: 75px;
+    font-size: 48px;
     font-weight: 800;
     text-align: center;
+    color: var(--color-oscuro);
 }
 .hero__introduccion p {
     text-align: center;
+    color: var(--color-texto);
 }
 .hero__container{
     background-color: var(--color-claro);
@@ -113,29 +118,39 @@ footer {
     width: 100%;
     flex-wrap: wrap;
     padding: 50px;
+    border-radius: 50px;
+    margin: 20px;
+    gap: 20px;
 }
 .hero__container h3 {
     font-size: 36px;
     color: var(--color-titulo);
 }
 .hero__recomendaciones__img img {
-    width: 400px;
-
+    max-width: 400px;
+    width: 100%;
+    border-radius: 100px;
 }
 .hero__containertext {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+.hero__containertext a {
+    color: #af6565
 }
 .hero__content{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
+   background-color: var(--color-destacado);
+   border-radius: 30px;
 }
 .hero__content h2 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 800;
     text-align: center;
     color: var(--color-titulo);
@@ -144,22 +159,19 @@ footer {
  display: flex;
  flex-direction: column;
  align-items: center;
- padding: 10px
+ padding: 10px;
 }
 
-.hero__text{
-    display: flex;
-    background-color: var(--color-claro);
-    max-width: 1300px;
-}
-.hero__img{
-    width: 600px;
+.hero__img img{
+    max-width: 500px;
+    width: 100%;
     padding: 20px;
     border-radius: 15px;
-    display: flex;
+    display: flex; 
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
+    border-radius: 30px; 
 }
 .hero__step {
   background-color: var(--color-pasoapaso);
@@ -168,6 +180,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 30px;
 }
 
 .hero__descripcion {
@@ -176,8 +189,21 @@ footer {
 
 #hero__recomendaciones li span {
   color: var(--color-titulo);
+  font-weight: 600;
+}
+#hero__recomendaciones .hero__content {
+    gap: 50px;
+    padding: 30px 30px;
 }
 
+#hero__recomendaciones h3 {
+    color: var(--color-oscuro);
+    font-weight: 800;
+}
+
+#hero__recomendaciones ul {
+    max-width: 900px;
+}
 .nav {
     display: flex;
     justify-content: center;
@@ -203,4 +229,10 @@ footer {
 
 .footer__list a {
   color: var(--color-claro);
+}
+.footer__repositorio{
+    color: var(--color-pasoapaso);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
