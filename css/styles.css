@@ -52,6 +52,7 @@ main {
 footer {
   background-color: var(--color-oscuro);
   color: var(--color-claro);
+  padding: 10px;
 }
 #hero {
     background-color: var(--color-destacado);
