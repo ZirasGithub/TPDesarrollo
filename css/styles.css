@@ -39,6 +39,7 @@ header {
     top: 0;
     z-index: 1;
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 main {
     background-color: var(--color-secundario);
@@ -61,21 +62,32 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #hero__recetas{
     width: 100%;
     height: 100%;
     max-width: 1300px;
     padding: 70px 0;
-    background-color: var(--color-fondo);
+    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+}
+#hero__recomendaciones{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 70px 0;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .hero__introduccion {
-     width: 1250px;
+    width: 600px;
     background-color: bisque;
     display: flex;
     align-items: center;
@@ -103,6 +115,13 @@ footer {
     flex-wrap: wrap;
     padding: 50px;
 }
+.hero__container h3 {
+    font-size: 36px;
+}
+.hero__recomendaciones__img img {
+    width: 400px;
+
+}
 .hero__containertext {
     display: flex;
     flex-direction: column;
@@ -114,6 +133,7 @@ footer {
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .hero__content h2 {
     font-size: 48px;
@@ -153,6 +173,7 @@ footer {
 .hero__descripcion {
   text-align: center;
 }
+
 
 .nav {
     display: flex;
