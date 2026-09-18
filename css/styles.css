@@ -1,12 +1,12 @@
 @import url();
 
 :root {
---color-fondo:#dbba85;
---color-principal:#8B5E3C;
---color-secundario:#D8B888;
---color-acento:#C97B4A;
---color-cebolla:#8d5151;
---color-nav:#291111;
+--color-pasoapaso:#ecc27d;
+--color-oscuro:#4A3123;
+--color-claro:#FBF3E6;      /* tarjetas de receta y texto sobre fondo oscuro */
+--color-destacado:#C97B4A;  /* seccion de presentacion (hero) */
+--color-titulo:#8D5151;     /* titulos de las recetas */
+--color-texto:#3A2A1E;      /* texto general */
 }
 
 * {
@@ -24,12 +24,14 @@ html {
 }
 
 body {
-    background-color:var(--color-fondo);
+    color: var(--color-texto);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../img/49a3458e3f4aebde51984fa604d74101.webp);
 }
 
 header {
-    background-color:var(--color-principal);
+    background-color:var(--color-oscuro);
+    color: var(--color-claro);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +44,6 @@ header {
     flex-wrap: wrap;
 }
 main {
-    background-color: var(--color-secundario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,10 +51,11 @@ main {
 }
 
 footer {
-  background-color: var(--color-principal);
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
 }
 #hero {
-    background-color: var(--color-acento);
+    background-color: var(--color-destacado);
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -69,7 +71,6 @@ footer {
     height: 100%;
     max-width: 1300px;
     padding: 70px 0;
-    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +81,6 @@ footer {
     height: 100%;
     max-width: 1300px;
     padding: 70px 0;
-    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +88,6 @@ footer {
 }
 .hero__introduccion {
     width: 600px;
-    background-color: bisque;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +104,7 @@ footer {
     text-align: center;
 }
 .hero__container{
-    background-color:red;   
+    background-color: var(--color-claro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +116,7 @@ footer {
 }
 .hero__container h3 {
     font-size: 36px;
+    color: var(--color-titulo);
 }
 .hero__recomendaciones__img img {
     width: 400px;
@@ -128,7 +128,6 @@ footer {
     align-items: center;
 }
 .hero__content{
-    background-color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -139,6 +138,7 @@ footer {
     font-size: 48px;
     font-weight: 800;
     text-align: center;
+    color: var(--color-titulo);
 }
 .hero__ingredientes {
  display: flex;
@@ -149,20 +149,20 @@ footer {
 
 .hero__text{
     display: flex;
-    background-color: white;
+    background-color: var(--color-claro);
     max-width: 1300px;
 }
 .hero__img{
     width: 600px;
     padding: 20px;
     border-radius: 15px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
 }
 .hero__step {
-  background-color: var(--color-acento);
+  background-color: var(--color-pasoapaso);
   width: 100%;
   padding: 20px;
   display: flex;
@@ -174,18 +174,19 @@ footer {
   text-align: center;
 }
 
+#hero__recomendaciones li span {
+  color: var(--color-titulo);
+}
 
 .nav {
     display: flex;
-    background-color: var(--color-principal);
     justify-content: center;
     align-items: center;
     gap: 15rem;
 }
 .footer__list{
     display: flex;
-    background-color: var(--color-principal);
-    justify-content:center;
+    justify-content:center ;
     align-items: center;
     gap: 2rem;
 }
@@ -197,9 +198,9 @@ footer {
 }
 
 .nav a {
-  color: var(--color-nav);
+  color: var(--color-claro);
 }
 
 .footer__list a {
-  color: var(--color-nav);
+  color: var(--color-claro);
 }
